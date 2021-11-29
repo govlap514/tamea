@@ -1,0 +1,55 @@
+table{
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+
+
+body{
+    max-width: 1200px ;
+}
+
+th{
+    background-color: #333;
+    color: #fff;
+    padding: .8rem;
+}
+td div{
+   
+
+    border: 1px solid green;
+}
+
+td , th {
+    font-size: 12px;
+    border: 1px solid #fff;
+    width: 16.6666666667%;
+}
+
+@media screen and (max-width: 600px) {
+    table{
+        width: 100%;
+    }
+    thead{
+        display: none;
+    }
+    td{
+        display: block;
+        width: 80%;
+        
+    }
+
+    td:first-child{
+        background-color: #333;
+        color: #fff ;
+        text-align: center;
+    }
+
+    td:nth-child(2) div::before{
+       content: "Part Length(inch)";
+    }
+
+}
+
